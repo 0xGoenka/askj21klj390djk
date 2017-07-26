@@ -1,0 +1,54 @@
+body
+{
+    margin:0px;
+}
+header
+{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    line-height: 175px;
+}
+header > ul
+{
+    display: flex;
+    list-style: none;
+    margin:0px;
+    padding:0px;
+}
+header > ul > li
+{
+    width: 370px;
+    height: 175px;
+}
+.main-logo
+{
+    background-color: grey;
+    width: 440px;
+}
+
+.popup
+{
+    height: 540px;
+    width: 970px;
+    position: absolute;
+    top: 270px;
+    left: 585px;
+    background-color: white;
+}
+.popup > .title
+{
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    padding-top: 20px;
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+.popup > .description
+{
+    font-size: 1rem;
+    padding:30px;
+}
