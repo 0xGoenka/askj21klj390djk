@@ -26,7 +26,7 @@
     <section>
         <img src="rezDeChausser.png">
     </section>
-    <section class="popup">
+    <section id="popup">
         <div class="title">
             H & M
         </div>
@@ -38,7 +38,26 @@ En dehors de Calvin Klein (CK.com) et American Eagle (AE.com), H&M est la seule 
         </div>
     </section>
   </body>
-  <script type="text/javascript" src="http://localhost:35729/livereload.js">
+  <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
+  <script>
+  togglePopup();
+    function toggleDiv(id)
+    {
+        var div = document.getElementById(id);
+        div.style.display = div.style.display == "none" ? "block" : "none";
+    }
 
+    function togglePopup()
+    {
+        console.log(getStyle('popup', 'visibility'));
+    }
+
+    function getStyle(id, property)
+    {
+        var element = document.getElementById(id),
+        style = window.getComputedStyle(element),
+        ret = style.getPropertyValue(property);
+        return ret;
+    }
   </script>
 </html>

@@ -28,7 +28,7 @@ header > ul > li
     width: 440px;
 }
 
-.popup
+#popup
 {
     height: 540px;
     width: 970px;
@@ -36,6 +36,7 @@ header > ul > li
     top: 270px;
     left: 585px;
     background-color: white;
+    visibility: hidden;
 }
 .popup > .title
 {
