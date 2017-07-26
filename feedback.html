@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Votre avis</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic"> 	 	 	 	
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/animate.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<!-- Favicon and touch icons -->
+		<link rel="shortcut icon" href="assets/ico/favicon.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+	</head>
+
+	<body>
+
+		<!-- Contact Form -->
+		<div class="c-form-container section-container section-container-image-bg">
+			<div class="container">
+				
+				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2 c-form section-description wow fadeIn">
+						<h1>Votre avis est important <br/> êtes-vous satisfait de votre visite ?</h1>
+						<p>Donnez-nous votre avis pour participer au tirage au sort et <strong>gagnez un bon d'achat de 100 TDN !</strong></p>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3 c-form-box wow fadeInUp">
+						<div class="c-form-bottom">
+							<form role="form" action="assets/contact.php" method="post">
+								<div class="form-group">
+									<label for="c-form-name">
+										<span class="label-text">Identité :</span> 
+										<span class="contact-error"></span>
+									</label>
+									<input type="text" name="name" placeholder="Nom & prénom" class="c-form-name form-control" id="c-form-name">
+								</div>
+								<div class="form-group">
+									<label for="c-form-email">
+										<span class="label-text">Email :</span> 
+										<span class="contact-error"></span>
+									</label>
+									<input type="text" name="email" placeholder="Votre adresse email" class="c-form-email form-control" id="c-form-email">
+								</div>
+								<div class="form-group">
+									<label for="c-form-phone">
+										<span class="label-text">Téléphone :</span> 
+										<span class="contact-error"></span>
+									</label>
+									<input type="tel" name="phone" placeholder="Numéro de téléphone" class="c-form-phone form-control" id="c-form-phone">
+								</div>
+								<div class="form-group">
+									<label for="c-form-message">
+										<span class="label-text">Avis :</span> 
+										<span class="contact-error"></span>
+									</label>
+									<textarea name="message" placeholder="Donnez-nous votre avis" class="c-form-message form-control" id="c-form-message"></textarea>
+								</div>
+								<center>
+								<div class="stars form-group">
+										<input class="star star-5" id="star-5" type="radio" name="star"/>
+										<label class="star star-5" for="star-5"></label>
+										<input class="star star-4" id="star-4" type="radio" name="star"/>
+										<label class="star star-4" for="star-4"></label>
+										<input class="star star-3" id="star-3" type="radio" name="star"/>
+										<label class="star star-3" for="star-3"></label>
+										<input class="star star-2" id="star-2" type="radio" name="star"/>
+										<label class="star star-2" for="star-2"></label>
+										<input class="star star-1" id="star-1" type="radio" name="star"/>
+										<label class="star star-1" for="star-1"></label>
+								</div>
+								</center>
+								<p>Laissez un avis sur un magasin en particulier (Optionnel) :</p>
+								<div id="store" class="form-group">
+								<select class="form-control" id="sel1">
+									<option>Zara</option>
+									<option>Geox</option>
+									<option>Monoprix</option>
+									<option>Celio</option>
+								</select>
+								</div>
+								<div class="form-group">
+									<label for="c-form-message">
+										<span class="label-text">Avis :</span> 
+										<span class="contact-error"></span>
+									</label>
+									<textarea name="message" placeholder="Donnez-nous votre avis" class="c-form-message form-control" id="c-form-message"></textarea>
+								</div>
+								<button type="submit" class="btn">Valider votre avis</button>
+							</form>
+						</div>
+					</div>
+				</div>
+<!--
+				<div class="row">
+					<div class="col-sm-12 c-form-info-title wow fadeInUp">
+						<h3>...or find us here:</h3>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-3 c-form-info-box wow fadeInUp">
+						<div class="c-form-info-box-icon">
+							<i class="fa fa-map-marker"></i>
+						</div>
+						<p>Via Po 10<br>10136 Turin IT</p>
+					</div>
+					<div class="col-sm-3 c-form-info-box wow fadeInDown">
+						<div class="c-form-info-box-icon">
+							<i class="fa fa-phone"></i>
+						</div>
+						<p>Phone:<br>333 12 68 347</p>
+					</div>
+					<div class="col-sm-3 c-form-info-box wow fadeInUp">
+						<div class="c-form-info-box-icon">
+							<i class="fa fa-envelope"></i>
+						</div>
+						<p>Email:<br><a href="mailto:contact.azmind@gmail.com">contact.azmind@gmail.com</a></p>
+					</div>
+					<div class="col-sm-3 c-form-info-box wow fadeInDown">
+						<div class="c-form-info-box-icon">
+							<i class="fa fa-skype"></i>
+						</div>
+						<p>Skype:<br>azmind_online</p>
+					</div>
+				</div>
+-->
+			</div>
+		</div>
+		
+
+		<!-- Javascript -->
+		<script src="assets/js/jquery-1.11.1.min.js"></script>
+		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/js/jquery.backstretch.min.js"></script>
+		<script src="assets/js/wow.min.js"></script>
+		<script src="assets/js/scripts.js"></script>
+		
+		<!--[if lt IE 10]>
+			<script src="assets/js/placeholder.js"></script>
+		<![endif]-->
+
+	</body>
+
+</html>

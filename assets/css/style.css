@@ -18,6 +18,10 @@ a, a:hover, a:focus {
 	-o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
 }
 
+p {
+	font-size: 18px;
+}
+
 h1, h2 {
 	margin-top: 10px;
 	font-size: 38px;
@@ -96,7 +100,8 @@ img { max-width: 100%; }
 .c-form-box input[type="text"],
 .c-form-box input[type="tel"],
 .c-form-box textarea,
-.c-form-box textarea.form-control {
+.c-form-box textarea.form-control,
+#store select {
 	height: 50px;
 	margin: 0;
 	padding: 0 20px;
@@ -107,7 +112,7 @@ img { max-width: 100%; }
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 50px;
-	color: #888;
+	color: #fff;
 	-moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
 	-moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
 	-o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
@@ -229,7 +234,7 @@ img { max-width: 100%; }
 div.stars {
 	width: auto;
 	display: inline-block;
-	margin: auto;
+	margin-top: 50px;
 }
 
 input.star { display: none; }
@@ -261,3 +266,5 @@ label.star:before {
 	content: '\f006';
 	font-family: FontAwesome;
 }
+
+/*	**	Custom css	**	*/
