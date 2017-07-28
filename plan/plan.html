@@ -24,7 +24,7 @@
       </ul>
     </header>
     <section>
-        <img src="rezDeChausser.png">
+        <img src="rezDeChausser.png" onclick="toggleDiv('popup')">
     </section>
     <section id="popup">
         <div class="title">
@@ -40,16 +40,24 @@ En dehors de Calvin Klein (CK.com) et American Eagle (AE.com), H&M est la seule 
   </body>
   <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
   <script>
-  togglePopup();
+    toggleDiv('popup');
     function toggleDiv(id)
     {
         var div = document.getElementById(id);
-        div.style.display = div.style.display == "none" ? "block" : "none";
+        if (getStyle(id, 'visibility') == 'hidden')
+        {
+                div.style.visibility = 'visible';
+        }
+        else {
+            div.style.visibility = 'hidden';
+        }
+        //div.style.visibility = ((getStyle(id, 'visibility') == 'hidden') ? 'hidden' : 'visible');
     }
 
     function togglePopup()
     {
         console.log(getStyle('popup', 'visibility'));
+
     }
 
     function getStyle(id, property)
