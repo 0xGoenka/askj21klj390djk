@@ -7,6 +7,20 @@
 		<link href="assets/css/style.css" rel="stylesheet">
 	</head>
 	<body>
+
+		<div class="popup" id="popup">
+	 	   <div class="titre">H & M</div>
+	 	   <div class="description">Hennes et Mauritz, plus connu sous le nom de H&M, est une entreprise et chaîne de magasins suédoise de prêt-à-porter pour femme, enfant et homme, fondée en 1947 par Erling Persson.
+
+H&M est présent dans 66 pays et emploie environ 161000 personnes et possède 4498 magasins
+
+L'enseigne propose notamment des collections temporaires créées en collaboration avec des stylistes (Karl Lagerfeld, Viktor & Rolf, Roberto Cavalli, Versace, Balmain, Kenzo) ou des stars (Madonna, Kylie Minogue, Katy Perry, Lana Del Rey, David Beckham, Vanessa Paradis, Beyoncé, Lady Gaga, Caitlyn Jenner, The Weeknd).
+
+En dehors de Calvin Klein (CK.com) et American Eagle (AE.com), H&M est la seule société de textile au monde qui fait ainsi partie de la VB.com Internet Hall of Fame en possédant un nom de domaine à seulement deux lettres3. Le groupe a pu obtenir le domaine HM.com en 19984. Il vend aussi des meubles et des décorations.
+</div>
+	 	   <div class="exit" onclick="toggleDiv('popup')">FERMER</div>
+	    </div>
+
 		<header>
 			<ul>
 				<li><a href="index.html"><span class="icon-font"></span></a></li>
@@ -19,12 +33,24 @@
         <li><h3>Etages</h3></li>
       </ul>
       <ul class="right">
-        <li><h3>RDC</h3></li>
+        <li style="background-color:#DFEFFC"><h3>RDC</h3></li>
         <li><h3>1</h3></li>
         <li><h3>2</h3></li>
         <li><h3>3</h3></li>
       </ul>
     </div>
 
+	<section>
+	   <img src="rezDeChausser.png" usemap="#Map" />
+	   <map name="Map" id="Map">
+		   <area onclick="toggleDiv('popup')" alt="" title="" href="#" shape="poly" coords="294,310,269,395,296,444,396,434,422,372,475,356,466,315,384,292" />
+		   <area alt="" title="" href="#" shape="poly" coords="433,375,521,371,594,400,552,422,478,436,430,433" />
+		   <area alt="" title="" href="#" shape="poly" coords="603,306,632,419,705,409,677,308" />
+		   [...]
+	   </map>
+   </section>
+
 	</body>
+	<script src="http://localhost:35729/livereload.js"></script>
+	<script src="plan.js"></script>
 </html>
